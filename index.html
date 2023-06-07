@@ -9,64 +9,131 @@
 </head>
 <body>
     <header>
-        <nav>
-            <img src="img/gg.png" alt="Logo">
-            <a href="index.html">Inicio</a>
-            <a href="#la-empresa">Empresa</a>
-            <a href="productos.html">Productos</a>
-            <a href="registro.html">Registro</a>
-            <a href="mi-cuenta.html">Mi cuenta</a>
-            <a href="#contacto">Contacto</a>
+        <nav id="barranav">
+            <a href="index.html">
+            <img id="logo" src="img/gg.png" alt="Logo">
+            </a>
+            <div id="barraderecha">
+                <a href="#empresa" class="barra">Empresa</a>
+                <a href="productos.html" class="barra">Productos</a>
+                <a href="registro.html" class="barra">Registro</a>
+                <a href="mi-cuenta.html" class="barra">Mi cuenta</a>
+                <a href="#contacto" class="barra">Contacto</a>
+            </div>    
         </nav>
     </header>
+
+    <section id="empresa">
+        <h1 class="la-empresa">Goat Games</h1>
+        <p class="goat"><strong>Goat Games</strong> es una tienda de videojuegos para consolas PlayStation,<br>aunque en un futuro también se venderán videojuegos para otras consolas y otros tipos de productos.</p>
+    </section>
     
-    <h1 id="la-empresa">La empresa</h1>
-    <p><strong>Goat Games</strong> es una tienda de <mark>videojuegos para consolas PlayStation,</mark><br>aunque en un futuro también se venderán videojuegos para otras consolas y otros tipos de productos.</p><hr>
+    <hr>
+
     <h2>Videojuegos</h2>
     
-    <div><em>Videojuevos más vendidos en los últimos 30 días</em></div>
-    <ol>
-        <li>Resident Evil 4 Remake</li>
-        <img src="img/resident-evil-4-remake.jpg" alt="Resident Evil 4 Remake">
-        <li>Elden Ring</li>
-        <img src="img/elden-ring.jpg" alt="Elden Ring">
-        <li>Dead Island 2</li>
-        <img src="img/Dead-Island-2.jpg" alt="Dead Island 2">
-    </ol><hr>
-    <div><em>Videojuegos para PlayStation 4</em></div>
-    <ul>
-        <li>Resident Evil 4 Remake</li>
-        <img src="img/resident-evil-4-remake.jpg" alt="Resident Evil 4 Remake">
-        <li>Dead Island 2</li>
-        <img src="img/Dead-Island-2.jpg" alt="Dead Island 2">
-        <li>Grand Theft Auto V</li>
-        <img src="img/Grand-Theft-Auto-V-Premium-Edition.jpg" alt="Grand Theft Auto V Premium Edition">
-        <li>Elden Ring</li>
-        <img src="img/elden-ring.jpg" alt="Elden Ring">
-    </ul><hr>
+    <div><p><em>Videojuegos más vendidos en los últimos 30 días</em></p>
+        <div id="cajaprincipal">
+            <div class="caja1">
+                <div class="imagencont">
+                    <img class="imagen" src="img/resident-evil-4-remake.jpg" alt="Resident Evil 4 Remake">
+                </div>
+                <div class="informacion">
+                    <div class="nombre">Resident Evil 4 Remake</div>
+                    <div class="precio">$20000</div>
+                </div>
+            </div>
+            <div class="caja1">
+                <div class="imagencont">
+                    <img class="imagen" src="img/elden-ring.jpg" alt="Elden Ring">
+                </div>
+                <div class="informacion">
+                    <div class="nombre">Elden Ring</div>
+                    <div class="precio">$20000</div>
+                </div>
+            </div>
+            <div class="caja1">
+                <div class="imagencont">
+                    <img class="imagen" src="img/Dead-Island-2.jpg" alt="Dead Island 2">
+                </div>
+                <div class="informacion">
+                    <div class="nombre">Dead Island 2</div>
+                    <div class="precio">$20000</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <hr>
 
-    <h3 id="contacto">Contacto</h3>
-    <form action="" method="get">
-        <label>Nombre</label>
-        <input type="text">
-
-        <label>Email</label>
-        <input type="text">
-
-        <label>Número de teléfono</label>
-        <input type="number">
-
-        <label>DNI</label>
-        <input type="number">
-
-        <label>Asunto</label>
-        <input type="text">
-
-        <label>Mensaje</label>
-        <textarea placeholder="Escribínos un mensaje"></textarea>
-
-        <button type="submit">Enviar</button>
-    </form>
+    <p><em>Videojuegos para PlayStation 4</em></p>
+        <div id="cajaprincipal">
+            <div class="caja1">
+                <div class="imagencont">
+                    <img class="imagen" src="img/resident-evil-4-remake.jpg" alt="Resident Evil 4 Remake">
+                </div>
+                <div class="informacion">
+                    <div class="nombre">Resident Evil 4 Remake</div>
+                    <div class="precio">$20000</div>
+                </div>
+            </div>
+            <div class="caja1">
+                <div class="imagencont">
+                    <img class="imagen" src="img/Dead-Island-2.jpg" alt="Dead Island 2">
+                </div>
+                <div class="informacion">
+                    <div class="nombre">Dead Island 2</div>
+                    <div class="precio">$20000</div>
+                </div>
+            </div>
+            <div class="caja1">
+                <div class="imagencont">
+                    <img class="imagen" src="img/Grand-Theft-Auto-V-Premium-Edition.jpg" alt="Grand Theft Auto V Premium Edition">
+                </div>
+                <div class="informacion">
+                    <div class="nombre">Grand Theft Auto V<br>Premium Edition</div>
+                    <div class="precio">$20000</div>
+                </div>
+            </div>
+            <div class="caja1">
+                <div class="imagencont">
+                    <img class="imagen" src="img/elden-ring.jpg" alt="Elden Ring">
+                </div>
+                <div class="informacion">
+                    <div class="nombre">Elden Ring</div>
+                    <div class="precio">$20000</div>
+                </div>
+            </div>
+        </div>
+    <hr>
 
 </body>
+
+<footer>
+    <div class="cajacontacto">
+        <h3 id="contacto">Contacto</h3>
+        <form action="" method="get">
+            <label>Nombre</label>
+            <input type="text">
+
+            <label>Email</label>
+            <input type="text">
+
+            <label>Número de teléfono</label>
+            <input type="number">
+
+            <label>DNI</label>
+            <input type="number">
+
+            <label>Asunto</label>
+            <input type="text">
+
+            <label>Mensaje</label>
+            <textarea placeholder="Escribínos un mensaje"></textarea>
+            <br>
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
+</footer>
+
 </html>
